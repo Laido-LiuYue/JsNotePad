@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>状态栏布局和测试页面</title>
+  <link rel="stylesheet" href="statusbar.css">
+</head>
+<body>
+<input id="btn-test" type="button" value="隐藏状态栏">  
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="statusbar.js"></script>
+<script>
+$(function() {
+    var bVisable = true;
+    $statusBar.init({container: 'body', row: 3, col: 1});
+
+    var $btnTest = $('#btn-test');
+
+    $btnTest.click(function() {
+      bVisable = !bVisable;
+      $statusBar.display(bVisable);
+
+      var title = bVisable ? '隐藏状态栏' : '显示状态栏';
+      $btnTest.val(title);
+    });
+});
+</script>
+</body>
+</html>

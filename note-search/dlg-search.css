@@ -1,0 +1,77 @@
+.notepad-dlg-search {
+  z-index: 10;
+  margin-top:100px;
+  margin-left:400px;
+}
+
+.notepad-dlg-search .dialogbox {
+  height: 240px;
+  width: 500px;
+  border:1px solid #0f7fd6;
+  //background-color:grey;
+}
+.notepad-dlg-search .dialogbox .notepad-dlg-titlebar{
+  height:40px;
+}
+.notepad-dlg-search .dialogbox .notepad-dlg-titlebar .title{
+  margin-left:10px; 
+  line-height: 40px;
+  position: absolute;
+} 
+.notepad-dlg-search .dialogbox .notepad-dlg-titlebar .close-btn {
+    color: gray;
+    position: absolute;
+    right: 0;
+    margin-top:10px;
+    width: 30px;
+}
+
+.notepad-dlg-search .dialogbox .notepad-dlg-titlebar .close-btn:hover {
+      color: red;
+
+}
+
+.notepad-dlg-search .main {
+  height: 200px;
+  padding: 10px;
+  margin-top:10px;
+  //background-color:#f0f0f0;
+}
+
+.notepad-dlg-search .main .txt-content {
+  box-sizing: border-box;
+  height: 26px;
+  margin: 10px;
+  width: 224px;
+}
+
+.notepad-dlg-search .main .btn-search {
+  position: absolute;
+  right: 12px;
+  width:100px; 
+  margin-top:-35px;
+ }
+
+.notepad-dlg-search .main .btn-cancel {
+  bottom: 22px;
+  width:100px;
+  position: absolute;
+  right: 12px;
+}
+
+.notepad-dlg-search .main .search-direction {
+  border-color: #f0f0f0;
+  box-sizing: border-box;
+  height: 52px; 
+  position: absolute;
+  margin-top:10px;
+  width: 200px;
+}
+
+.notepad-dlg-search .main input[value="down"] {
+  margin-left: 5px;
+}
+
+.notepad-dlg-search .main input[value="capital-sense"] {
+  margin-top: 30px;
+}
