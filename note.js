@@ -1,36 +1,44 @@
-/* exported $dlgAbout */
-var $dlgAbout = (function() {
+/* exported $dlgRow */
+var $dlgRow = (function() {
     var DOM = ''
-          + '<div class="notepad-dlg-about">'
+          + '<div class="notepad-dlg-row">'
             + '<div class="dialogbox">'
               + '<div class="titlebar">'
-                + '<p class="title">关于“记事本”</p>'
-                + '<span class="close-btn">✖</span>'
+                + '<p class="title">转到指定行</p>'
+                + '<span class="btn-cancel">✖</span>'
               + '</div>'
+              +'<hr>'
               + '<div class="main">'
-                + '<h1 class="slogan">JSNotepad</h1>'
-                + '<hr>'
-                + '<img class="app-logo" src="../../images/notepad-icon-32.png" alt="JSNotepad">'
-                + '<div class="info">'
-                  + '<p>作者：刘月</p>'
-                  + '<p>QQ：578201842</p>'
-                  + '<p>仓库地址：<a href="https://github.com/Laido-LiuYue/JsNotePad" target="_blank">https://github.com/Laido-LiuYue/JsNotePad/</a></p>'
-                + '</div>'
-                + '<input class="btn-ok" type="button" value="确定">'
+                + '<div class="row">'
+                  +'<p class="title">行号（L)：</p>'
+                  +'<input class="search-row" type="text" id="row" value="">'
+                +'</div>'
+                +'<button class="btn-ok" type="submit">转到</button>'
+                +'<button class="btn-cancel" type="submit">取消</button>'
               + '</div>'
             + '</div>'
           + '</div>';
 
   var $dlg = $(DOM),
+      //$row = Number($("#row").val()),
       $btnOk = $dlg.find('.btn-ok'),
-      $btnClose = $dlg.find('.close-btn');
+      $btnClose = $dlg.find('.btn-cancel');
 
   function show() {
         $('body').append($dlg);
         $dlg.find('.dialogbox').draggable({handle: $dlg.find('.titlebar')});
 
-        $btnOk.click(function() { $dlg.remove();  });
-        $btnClose.click(function() { $dlg.remove();  });
+        $btnOk.click(function() {
+          $dlg.remove();    
+          //if($row < 11 & $row < 0)){
+          console.log('goto btn click!GOTO'+ Number($('#row').val()) +' lines!')
+          //}else{
+            //alert('error rows!');
+          //}
+        });
+        $btnClose.click(function() {
+          $dlg.remove();  
+        });
                       
   }
     return {show: show};

@@ -1,38 +1,37 @@
-.notepad-dlg-about {
-    //background-color: #00800000;
-    height: 100%;
-    left: 0;
+*{
+  margin:0;
+}
+.notepad-dlg-row {
+    height: 100%;    
     position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 10;
 }
 
-.notepad-dlg-about .dialogbox {
+.notepad-dlg-row .dialogbox {
     border: 1px solid #0f7fd6;
-    box-sizing: border-box;
+    //box-sizing: border-box;
     cursor: default;
-    height:400px;
+    height:161px;
     margin: 0 auto;
     position: relative;
     top: 100px;
     user-select: none;
-    width: 536px;
+    width: 293px;
 }
 
-.notepad-dlg-about .titlebar {
+.notepad-dlg-row .titlebar {
     background-color: white;
-    font-size: 1.3em;
+    font-size: 0.8em;
     height: 30px;
 }
 
-.notepad-dlg-about .titlebar .title {
+.notepad-dlg-row .titlebar .title {
     left: 10px;
     line-height: 30px;
     position: absolute;
 }
 
-.notepad-dlg-about .titlebar .close-btn {
+.notepad-dlg-row .titlebar .btn-cancel {
     color: gray;
     line-height: 30px;
     position: absolute;
@@ -41,43 +40,50 @@
     width: 30px;
 }
 
-.notepad-dlg-about .titlebar .close-btn:hover {
-    background-color: red;
-    color: white;
+.notepad-dlg-row .titlebar .btn-cancel:hover {
+    color: red;
 }
 
-.notepad-dlg-about .main {
+.notepad-dlg-row .main {
     background-color: #f0f0f0;
     box-sizing: border-box;
-    height: 368px;
-    padding: 15px;
+    height: 129px;
+    padding:0;
     position: relative;
 }
 
-.notepad-dlg-about .main .slogan {
-    color: #0077c8;
-    font-size: 4em;
-    line-height: 100px;
-    text-align: center;
+.notepad-dlg-row .main .title{
+  font-size:0.8em;
+  line-height:29px;
+  margin-left:12px;
+  padding:0;
 }
 
-.notepad-dlg-about .main .app-logo {
-    margin: 20px 10px;
+.notepad-dlg-row .main .search-row{
+  width:265px;
+  height:25px;
+  background-color:white;
+  border:1px solid blue;
+  margin-left:12px;
 }
 
-.notepad-dlg-about .main .info {
-    display: inline-block;
-    font-size: 1.2em;
-    height: 100px;
-    left: 80px;
-    line-height: 20px;
-    margin-left: 5px;
-}
-
-.notepad-dlg-about .main .btn-ok {
+.notepad-dlg-row .main .btn-ok {
     bottom: 16px;
-    height: 27px;
+    height: 28px;
     position: absolute;
-    right: 12px;
-    width: 85px;
+    right: 108px;
+    width: 86px;
+}
+.notepad-dlg-row .main .btn-ok:hover {
+  border:1px solid #0f7fd6;
+}
+.notepad-dlg-row .main .btn-cancel:hover{
+  border:1px solid #0f7fd6;
+}
+.notepad-dlg-row .main .btn-cancel {
+    bottom: 16px;
+    height: 28px;
+    position: absolute;
+    right: 14px;
+    width: 86px;
 }
