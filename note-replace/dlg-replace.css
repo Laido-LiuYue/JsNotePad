@@ -1,15 +1,35 @@
 .notepad-dlg-replace {
   z-index: 10;
+  margin-top:100px;
+  margin-left:400px;
 }
 
 .notepad-dlg-replace .dialogbox {
   height: 232px;
-  width: 404px;
+  width: 440px;
+  border: 1px solid #0f7fd6;
 }
 
 .notepad-dlg-replace .main {
   height: 200px;
   padding: 6px;
+}
+.notepad-dlg-replace .titlebar .title {
+    left: 10px;
+    line-height: 30px;
+    position: absolute;
+}
+.notepad-dlg-replace .titlebar .btn-cancel {
+    color: gray;
+    line-height: 30px;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    width: 30px;
+}
+
+.notepad-dlg-replace .titlebar .btn-cancel:hover {
+    color: red;
 }
 
 .notepad-dlg-replace .main .txt-search {
@@ -17,7 +37,8 @@
   height: 26px;
   margin: 10px;
   width: 198px;
-}
+  margin-top:45px;
+ }
 
 .notepad-dlg-replace .main .txt-replace {
   box-sizing: border-box;
