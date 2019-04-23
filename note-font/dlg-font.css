@@ -3,49 +3,73 @@
 }
 
 .notepad-dlg-font .dialogbox {
-  height: 498px;
-  width: 438px;
+  height: 398px;
+  width: 540px;
+  border:1px solid #0f7fd6;
+  //padding:10px;
+  margin-top:32px;
 }
-
+.notepad-dlg-font .notepad-dlg-titlebar{
+  padding:0;
+}
+.notepad-dlg-font .notepad-dlg-titlebar .title{
+  left: 10px;
+  line-height: 32px;
+  margin-left:12px;
+  display:inline-block;
+}
+.notepad-dlg-font .notepad-dlg-titlebar .close-btn{
+  color: gray;
+  line-height: 32px;
+  right: 0;
+  display:inline-block;
+  float:right; 
+  text-align: center;
+  width: 30px;
+}
+.notepad-dlg-font .notepad-dlg-titlebar .close-btn:hover {
+    color:white;
+    background-color:red;
+}
 .notepad-dlg-font .main {
-  height: 466px;
+  height: 314px;
+  padding:10px;
+  background-color:#F0F0F0;
 }
 
 .notepad-dlg-font .main .font-family,
-.notepad-dlg-font .main .font-style {
-  display: inline-block;
+.notepad-dlg-font .main .font-style,
+.notepad-dlg-font .main .font-size{
+  display:inline-block;
   margin-right: 16px;
 }
 
 .notepad-dlg-font .main .sample {
   border-color: white;
   height: 78px;
-  margin-left: 196px;
+  //margin-left: 196px;
   margin-top: 28px;
   width: 194px;
 }
 
 .notepad-dlg-font .main .script {
-  margin-left: 196px;
+  //margin-left: 196px;
   margin-top: 12px;
 }
 
 .notepad-dlg-font .main select {
   height: 22px;
-  width: 214px;
-}
-.notepad-dlg-font .main .font-size {
-  display: inline-block;
+  width: 150px;
+  display:inline-block;
 }
 
-.notepad-dlg-font .main .btn-ok {
-  bottom: 10px;
-  position: absolute;
-  right: 110px;
-}
+.notepad-dlg-font .main .btn-ok,
+.notepad-dlg-font .main .btn-cancel{
+  float:right;
+  height:26px;
+  width:66px;
+ }
 
 .notepad-dlg-font .main .btn-cancel {
-  bottom: 10px;
-  position: absolute;
-  right: 16px;
+ margin-right:40px;
 }
