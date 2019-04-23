@@ -4,7 +4,7 @@ var $dlgSearch = (function() {
       + '<div class="notepad-dlg-search">'
         + '<div class="dialogbox notepad-dlgbox">'
           + '<div class="notepad-dlg-titlebar">'
-            + '<p class="title">查找</p>'
+            + '<span class="title">查找</span>'
             + '<span class="close-btn">✖</span>'
           + '</div>'  
           + '<div class="main notepad-dlg-main">'
