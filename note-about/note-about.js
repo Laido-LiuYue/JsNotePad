@@ -4,7 +4,7 @@ var $dlgAbout = (function() {
           + '<div class="notepad-dlg-about">'
             + '<div class="dialogbox">'
               + '<div class="titlebar">'
-                + '<p class="title">关于我的辣鸡记事本</p>'
+                + '<p class="title">关于记事本</p>'
                 + '<span class="btn-cancel">✖</span>'
               + '</div>'
               +'<hr>'

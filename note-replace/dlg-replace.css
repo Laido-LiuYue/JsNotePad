@@ -5,66 +5,77 @@
 }
 
 .notepad-dlg-replace .dialogbox {
-  height: 232px;
+  height: 192px;
   width: 440px;
   border: 1px solid #0f7fd6;
 }
-
-.notepad-dlg-replace .main {
-  height: 200px;
-  padding: 6px;
+.notepad-dlg-replace .titlebar{
+  height:32px;
 }
 .notepad-dlg-replace .titlebar .title {
     left: 10px;
-    line-height: 30px;
-    position: absolute;
+    line-height: 32px;
+    margin-left:12px;
+    display:inline-block;
 }
 .notepad-dlg-replace .titlebar .btn-cancel {
     color: gray;
-    line-height: 30px;
+    line-height: 32px;
     right: 0;
-    position: absolute;
+    display:inline-block;
+    float:right; 
     text-align: center;
     width: 30px;
 }
 
 .notepad-dlg-replace .titlebar .btn-cancel:hover {
-    color: red;
+    color:white;
+    background-color:red;
 }
-
+.notepad-dlg-replace .main{
+  background-color:#f0f0f0;
+  height:160px;
+}
+.notepad-dlg-replace .main label{
+  margin-left:12px;
+}
 .notepad-dlg-replace .main .txt-search {
   box-sizing: border-box;
   height: 26px;
   margin: 10px;
   width: 198px;
-  margin-top:45px;
+  position:relative;
  }
 
 .notepad-dlg-replace .main .txt-replace {
   box-sizing: border-box;
   height: 26px;
   margin-left: 25px;
-  width: 198px;
+  width: 198px;  
 }
 
 .notepad-dlg-replace .main .btn-search {
-  bottom: 156px;
+  bottom: 124px;
+  height:26px;
   position: absolute;
   right: 12px;
 }
 
 .notepad-dlg-replace .main .btn-replace {
-  bottom: 118px;
+  bottom: 86px;
+  height:26px;
   position: absolute;
   right: 12px;
 }
 .notepad-dlg-replace .main .btn-replace-all {
-  bottom: 82px;
+  bottom: 48px;
+  height:26px;
   position: absolute;
   right: 12px;
 }
 .notepad-dlg-replace .main .btn-cancel {
-  bottom: 46px;
+  bottom: 10px;
+  height:26px;
   position: absolute;
   right: 12px;
 }
